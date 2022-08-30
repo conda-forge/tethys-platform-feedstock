@@ -75,51 +75,52 @@ requirements:
 output:
   - name: tethys_apps
     files:
-      - *.css
-      - *.js
-      - *.gif
-      - *.png
-      - *.html
+      - '*.css'
+      - '*.js'
+      - '*.gif'
+      - '*.png'
+      - '*.html'
   - name: tethys_cli
     files:
-      - gen_templates/*
-      - *.css
-      - *.js
-      - *.gif
-      - *.png
-      - *.html
-      - *_tmpl
-      - *.gitignore
+      - 'gen_templates/*'
+      - '*.css'
+      - '*.js'
+      - '*.gif'
+      - '*.png'
+      - '*.html'
+      - '*_tmpl'
+      - '*.gitignore'
   - name: tethys_compute
     files:
-      - *.css
-      - *.js
-      - *.gif
-      - *.png
-      - *.html
+      - '*.css'
+      - '*.js'
+      - '*.gif'
+      - '*.png'
+      - '*.html'
   - name: tethys_gizmos
     files:
-      - *.css
-      - *.js
-      - *.gif
-      - *.png
-      - *.html
-      - *.kml
+      - '*.css'
+      - '*.js'
+      - '*.gif'
+      - '*.png'
+      - '*.html'
+      - '*.kml'
   - name: tethys_portal
     files:
-      - *.css
-      - *.js
-      - *.gif
-      - *.png
-      - *.html 
+      - '*.css'
+      - '*.js'
+      - '*.gif'
+      - '*.png'
+      - '*.html'
   - name: tethys_quotas
     files:
-      - *.html
+      - '*.html'
   - name: tethys_services
     files:
-      - *.css
-      - *.js
-      - *.html 
+      - '*.css'
+      - '*.js'
+      - '*.html'
+
 test:
   requires:
     - pip
