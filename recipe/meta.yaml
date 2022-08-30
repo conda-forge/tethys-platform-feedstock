@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - tethys = tethys_cli:tethys_command
 
@@ -72,6 +72,54 @@ requirements:
     - conda
     - pbr =5.9.*
 
+output:
+  - name: tethys_apps
+    files:
+      - *.css
+      - *.js
+      - *.gif
+      - *.png
+      - *.html
+  - name: tethys_cli
+    files:
+      - gen_templates/*
+      - *.css
+      - *.js
+      - *.gif
+      - *.png
+      - *.html
+      - *_tmpl
+      - *.gitignore
+  - name: tethys_compute
+    files:
+      - *.css
+      - *.js
+      - *.gif
+      - *.png
+      - *.html
+  - name: tethys_gizmos
+    files:
+      - *.css
+      - *.js
+      - *.gif
+      - *.png
+      - *.html
+      - *.kml
+  - name: tethys_portal
+    files:
+      - *.css
+      - *.js
+      - *.gif
+      - *.png
+      - *.html 
+  - name: tethys_quotas
+    files:
+      - *.html
+  - name: tethys_services
+    files:
+      - *.css
+      - *.js
+      - *.html 
 test:
   requires:
     - pip
@@ -87,6 +135,8 @@ test:
     - tethys_services
   commands:
     - tethys version
+    - tethys gen portal_config --overwrite
+    - tethys scaffold --defaults --overwrite
 
 about:
   home: http://www.tethysplatform.org/
