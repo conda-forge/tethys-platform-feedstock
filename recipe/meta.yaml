@@ -72,6 +72,24 @@ requirements:
     - conda
     - pbr =5.9.*
 
+test:
+  requires:
+    - pip
+  imports:
+    - tethys_apps
+    - tethys_cli
+    - tethys_compute
+    - tethys_config
+    - tethys_gizmos
+    - tethys_portal
+    - tethys_quotas
+    - tethys_sdk
+    - tethys_services
+  commands:
+    - tethys version
+    - tethys gen portal_config --overwrite
+    - tethys scaffold --defaults --overwrite
+
 outputs:
   - name: tethys_apps
     files:
@@ -120,24 +138,6 @@ outputs:
       - '*.css'
       - '*.js'
       - '*.html'
-
-test:
-  requires:
-    - pip
-  imports:
-    - tethys_apps
-    - tethys_cli
-    - tethys_compute
-    - tethys_config
-    - tethys_gizmos
-    - tethys_portal
-    - tethys_quotas
-    - tethys_sdk
-    - tethys_services
-  commands:
-    - tethys version
-    - tethys gen portal_config --overwrite
-    - tethys scaffold --defaults --overwrite
 
 about:
   home: http://www.tethysplatform.org/
