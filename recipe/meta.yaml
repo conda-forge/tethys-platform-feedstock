@@ -72,7 +72,7 @@ requirements:
     - conda
     - pbr =5.9.*
 
-output:
+outputs:
   - name: tethys_apps
     files:
       - '*.css'
