@@ -1,5 +1,5 @@
 {% set name = "tethys-platform" %}
-{% set version = "3.4.3" %}
+{% set version = "3.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/tethysplatform/tethys/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 3775d5599e756206204e09ca9a2114c8866fad7fd29999b256343c847ada3b1f
+  sha256: 867824A899D33FA8D113C96967E63EF2C7FA3568F3DFC1593EB42FA997E2AEB1
 
 build:
   noarch: python
-  number: 1
+  number: 0
   entry_points:
     - tethys = tethys_cli:tethys_command
 
@@ -89,55 +89,6 @@ test:
     - tethys version
     - tethys gen portal_config --overwrite
     - tethys scaffold --defaults --overwrite
-
-outputs:
-  - name: tethys_apps
-    files:
-      - '*.css'
-      - '*.js'
-      - '*.gif'
-      - '*.png'
-      - '*.html'
-  - name: tethys_cli
-    files:
-      - 'gen_templates/*'
-      - '*.css'
-      - '*.js'
-      - '*.gif'
-      - '*.png'
-      - '*.html'
-      - '*_tmpl'
-      - '*.gitignore'
-  - name: tethys_compute
-    files:
-      - '*.css'
-      - '*.js'
-      - '*.gif'
-      - '*.png'
-      - '*.html'
-  - name: tethys_gizmos
-    files:
-      - '*.css'
-      - '*.js'
-      - '*.gif'
-      - '*.png'
-      - '*.html'
-      - '*.kml'
-  - name: tethys_portal
-    files:
-      - '*.css'
-      - '*.js'
-      - '*.gif'
-      - '*.png'
-      - '*.html'
-  - name: tethys_quotas
-    files:
-      - '*.html'
-  - name: tethys_services
-    files:
-      - '*.css'
-      - '*.js'
-      - '*.html'
 
 about:
   home: http://www.tethysplatform.org/
