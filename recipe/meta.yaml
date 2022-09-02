@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/tethysplatform/tethys/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 867824A899D33FA8D113C96967E63EF2C7FA3568F3DFC1593EB42FA997E2AEB1
+  sha256: 867824a899d33fa8d113c96967e63ef2c7fa3568f3dfc1593eb42fa997e2aeb1
 
 build:
   noarch: python
