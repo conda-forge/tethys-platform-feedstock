@@ -25,63 +25,52 @@ requirements:
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.7
+    - python >=3.8
+    - django >=3.2,<6
+    - channels
+    - daphne
+    - setuptools_scm
+    - pip
+    - requests
     - bcrypt
+    - pyyaml
+    - jinja2
+    - django-bootstrap5
+    - django-model-utils
+    - django-guardian
+    - django-cors-headers
+    - django-session-security
+    - django-axes
+    - django-gravatar2
+    - django-simple-captcha
+    - django-mfa2
+    - django-recaptcha
+    - social-auth-app-django
+    - hs_restclient 
+    - python-jose
+    - django-oauth-toolkit
+    - arrow
+    - isodate
+    - django-termsandconditions
+    - django-analytical
+    - django-json-widget
+    - djangorestframework
     - PyShp
-    - pyopenssl
     - docker-py
-    - distro
+    - conda
+    - conda-libmamba-solver
     - postgresql
-    - psycopg2
+    - psycopg2 
     - sqlalchemy =1.*
     - geoalchemy2
     - plotly
     - bokeh
-    - tethys_dataset_services >=2.0.0
-    - hs_restclient
-    - owslib
-    - requests
     - dask
-    - tethys_dask_scheduler >=1.0.2
-    - service_identity
     - condorpy
+    - tethys_dask_scheduler >=1.0.2
+    - tethys_dataset_services >=2.0.0
+    - owslib 
     - siphon
-    - python-jose
-    - pyjwt
-    - arrow
-    - isodate
-    - django =3.2.*
-    - channels =3.*
-    - daphne =3.*
-    - django-analytical
-    - django-axes
-    - django-filter
-    - djangorestframework
-    - django-bootstrap5
-    - django-cors-headers
-    - django-model-utils
-    - django-guardian
-    - django-gravatar2
-    - django-json-widget
-    - django-mfa2
-    - django-recaptcha2
-    - django-simple-captcha
-    - django-session-security
-    - django-termsandconditions
-    - social-auth-app-django
-    - selenium
-    - coverage
-    - factory_boy
-    - pillow
-    - pip
-    - future
-    - flake8
-    - flake8-bugbear
-    - git
-    - setuptools_scm
-    - openssl
-    - conda
-    - conda-libmamba-solver
 
 test:
   requires:
