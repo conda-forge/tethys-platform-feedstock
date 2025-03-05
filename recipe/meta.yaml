@@ -1,5 +1,5 @@
 {% set name = "tethys-platform" %}
-{% set version = "4.3.5" %}
+{% set version = "4.3.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/tethysplatform/tethys/archive/refs/tags/{{ version }}.tar.gz
-  sha256: d558aacbfd9fae7701d74017d732008b104be4123bafd199174e031fbbd12659
+  sha256: 6a0cdc3bef1adcaf765f295d47b03e0da6c122907eb0130b5995eb706c0c7fe2
 
 build:
   noarch: python
@@ -29,6 +29,8 @@ requirements:
     - django >=3.2,<6
     - channels
     - daphne
+    - pyopenssl
+    - openssl
     - setuptools_scm
     - pip
     - requests
