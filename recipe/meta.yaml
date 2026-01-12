@@ -34,9 +34,9 @@ requirements:
     - openssl
     - setuptools_scm
     - pip
-    - requests>=2.32.4,<3
-    - tornado>=6.5,<7
-    - cryptography>=44.0.1,<45
+    - requests >=2.32.4,<3
+    - tornado >=6.5,<7
+    - cryptography >=44.0.1,<45
     - bcrypt
     - pyyaml
     - jinja2
