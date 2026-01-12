@@ -27,14 +27,16 @@ requirements:
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - django >=3.2,<6
+    - django >=4.2,<6
     - channels
     - daphne
     - pyopenssl
     - openssl
     - setuptools_scm
     - pip
-    - requests
+    - requests>=2.32.4,<3
+    - tornado>=6.5,<7
+    - cryptography>=44.0.1,<45
     - bcrypt
     - pyyaml
     - jinja2
@@ -58,6 +60,7 @@ requirements:
     - django-analytical
     - django-json-widget
     - djangorestframework
+    - djangorestframework_simplejwt
     - PyShp
     - docker-py
     - conda
