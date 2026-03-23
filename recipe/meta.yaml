@@ -36,7 +36,7 @@ requirements:
     - pip
     - requests >=2.32.4,<3
     - tornado >=6.5,<7
-    - cryptography >=44.0.1,<45
+    - cryptography >=46.0.5
     - bcrypt
     - pyyaml
     - jinja2
