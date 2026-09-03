@@ -1,5 +1,5 @@
 {% set name = "tethys-platform" %}
-{% set version = "4.6.0" %}
+{% set version = "4.6.1" %}
 {% set python_min = "3.10.*" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/tethysplatform/tethys/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 0616012ce06ec1f41d38ea45576f563d9c5388d031248b102edc4e4cd3944bb5
+  sha256: b1bb19ef948ba046b1dfce7ba78d6850e48bb115be7f9fadd286b3280da0a7b9
 
 build:
   noarch: python
